@@ -17,6 +17,8 @@ namespace WPFEvents
         {
            MainWindow wnd = new MainWindow();
             wnd.Title = "Changing the normal";
+            if (e.Args.Length == 1)
+                MessageBox.Show("Now opening file:\n \n" + e.Args[0]);
             wnd.Show();
         }
     }
