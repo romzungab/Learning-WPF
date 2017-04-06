@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlsInsideAControl", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFEvents", "WPFEvents\WPFEvents.csproj", "{33697DE6-D1DC-4C5A-820C-93F9A6F705A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingResources", "UsingResources\UsingResources.csproj", "{70AD3917-B622-4822-A6C2-99FD19FE6088}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{33697DE6-D1DC-4C5A-820C-93F9A6F705A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33697DE6-D1DC-4C5A-820C-93F9A6F705A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33697DE6-D1DC-4C5A-820C-93F9A6F705A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70AD3917-B622-4822-A6C2-99FD19FE6088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70AD3917-B622-4822-A6C2-99FD19FE6088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70AD3917-B622-4822-A6C2-99FD19FE6088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70AD3917-B622-4822-A6C2-99FD19FE6088}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
