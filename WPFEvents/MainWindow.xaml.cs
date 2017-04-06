@@ -23,7 +23,15 @@ namespace WPFEvents
         public MainWindow()
         {
             InitializeComponent();
+            PnlMainGrid.MouseUp += new MouseButtonEventHandler(pnlMainGrid_MouseUp);
+            PnlMainGrid.MouseDown += PnlMainGridOnMouseDown;
         }
+
+        private void PnlMainGridOnMouseDown(object sender, MouseButtonEventArgs mouseButtonEventArgs)
+        {
+            throw new NotImplementedException();
+        }
+
 
         private void pnlMainGrid_MouseUp(object sender, MouseButtonEventArgs e)
         {

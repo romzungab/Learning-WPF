@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WPFEvents"
         mc:Ignorable="d"
         Title="Sample Events" Height="300" Width="300">
-    <Grid Name="PnlMainGrid" MouseUp="pnlMainGrid_MouseUp"  Background="LightBlue">
+    <Grid Name="PnlMainGrid" Background="LightBlue">
         
     </Grid>
 </Window>
