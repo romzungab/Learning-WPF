@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="ResourceSample" Height="150" Width="350">
     <Window.Resources>
-        <system:String x:Key="StrHelloWorld">Hello, world!</system:String>
+        <system:String x:Key="StrHelloWorld">Hello, world</system:String>
     </Window.Resources>
    <StackPanel Margin="10">
        <TextBlock Text="{StaticResource StrHelloWorld}" FontSize="56"/>

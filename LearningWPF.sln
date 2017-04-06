@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFEvents", "WPFEvents\WPFE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingResources", "UsingResources\UsingResources.csproj", "{70AD3917-B622-4822-A6C2-99FD19FE6088}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedResources", "ExtendedResources\ExtendedResources.csproj", "{90799ECB-8976-4D3A-B239-414F0A02CF70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{70AD3917-B622-4822-A6C2-99FD19FE6088}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70AD3917-B622-4822-A6C2-99FD19FE6088}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70AD3917-B622-4822-A6C2-99FD19FE6088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90799ECB-8976-4D3A-B239-414F0A02CF70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90799ECB-8976-4D3A-B239-414F0A02CF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90799ECB-8976-4D3A-B239-414F0A02CF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90799ECB-8976-4D3A-B239-414F0A02CF70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
