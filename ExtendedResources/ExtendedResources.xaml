@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ExtendedResources"
         xmlns:system="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
-        Title="More Resources" Height="88.813" Width="191.864"
+        Title="More Resources" Height="150" Width="300"
         Background="{DynamicResource WindowBackgroundBrush}">
     <Window.Resources>
         <system:String  x:Key="ComboBoxTitle">Items:</system:String>
@@ -20,8 +20,11 @@
             <GradientStop Offset="1" Color="Gray"/>
         </LinearGradientBrush>
     </Window.Resources>
-    <StackPanel>
-        <Label Content ="{StaticResource ComboBoxTitle}"/>
+    <StackPanel Margin="10">
+       <StackPanel.Resources>
+           <system:String x:Key="ComboTitle">Items:</system:String>
+       </StackPanel.Resources>
+        <Label Content ="{StaticResource ComboTitle}"/>
         <ComboBox ItemsSource="{StaticResource ComboBoxItems}"/>
     </StackPanel>
 </Window>
