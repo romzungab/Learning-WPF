@@ -5,10 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HelloWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75">
-            Hello World!
-        </TextBlock>
-    </Grid>
+        Title="MainWindow" Height="500" Width="450">
+    <StackPanel>
+
+        <TextBlock HorizontalAlignment="Center"  VerticalAlignment="Top" FontSize="20" Height="38" Margin="166,0"><Run Text="Hello World!"/></TextBlock>
+
+        <TextBlock Margin="10" Foreground="Red"><Run Text="This is a TextBlock control"/><LineBreak /><Run Text="with multiple lines of text."/></TextBlock>
+        <TextBlock Margin="10" TextTrimming="WordEllipsis" Foreground="Green"><Run Text="This is a TextBlock control with text that may not be rendered completely, which will be indicated with an ellipsis."/></TextBlock>
+        <TextBlock Margin="10" TextWrapping="Wrap" Foreground="Blue"><Run Text="This is a TextBlock control with automatically wrapped text, using the TextWrapping property."/></TextBlock>
+        <TextBlock Margin="10" TextWrapping="Wrap" Foreground="Blue"><Run Text="This is a "/><Hyperlink RequestNavigate="Hyperlink_OnRequestNavigate" NavigateUri="https:\\google.com"><Run Text="google link"/></Hyperlink><Run Text=" hyperlink control with automatically wrapped text, using the TextWrapping property."/></TextBlock>
+        <TextBlock Margin="10" TextWrapping="Wrap"><Run Text="This "/><Span FontWeight="Bold"><Run Text="is"/></Span><Run Text=" a "/><Span Background="Silver" Foreground="Maroon"><Run Text="TextBlock"/></Span><Run Text=" with "/><Span TextDecorations="Underline"><Run Text="several"/></Span><Run Text=" "/><Span FontStyle="Italic"><Run Text="Span"/></Span><Run Text=" elements, "/><Span Foreground="Blue"><Run Text="using a "/><Bold><Run Text="variety"/></Bold><Run Text=" of "/><Italic><Run Text="styles"/></Italic></Span><Run Text="."/></TextBlock>
+        <Label Content="_Name:" Target="{Binding ElementName=TxtName}"/>
+        <TextBox x:Name="TxtName"/>
+        <Label Content="_Mail" Target="{Binding ElementName=TxtMail}"/>
+        <TextBox x:Name="TxtMail" />
+        <Label Target="{Binding ElementName=txtName}">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_green.png" />
+                <AccessText Text="N_ame:" />
+            </StackPanel>
+        </Label>
+        <TextBox Name="txtName" />
+        <Label Target="{Binding ElementName=txtMail}">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_blue.png" />
+                <AccessText Text="Mai_l:" />
+            </StackPanel>
+        </Label>
+        <TextBox Name="txtMail" />
+    </StackPanel>
+
 </Window>
