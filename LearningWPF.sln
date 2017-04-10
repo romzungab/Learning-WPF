@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingResources", "UsingReso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedResources", "ExtendedResources\ExtendedResources.csproj", "{90799ECB-8976-4D3A-B239-414F0A02CF70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResourcesFromCode", "ResourcesFromCode\ResourcesFromCode.csproj", "{1C44C1FD-5C12-4934-885F-11F17CFBDE32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{90799ECB-8976-4D3A-B239-414F0A02CF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90799ECB-8976-4D3A-B239-414F0A02CF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90799ECB-8976-4D3A-B239-414F0A02CF70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C44C1FD-5C12-4934-885F-11F17CFBDE32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C44C1FD-5C12-4934-885F-11F17CFBDE32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C44C1FD-5C12-4934-885F-11F17CFBDE32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C44C1FD-5C12-4934-885F-11F17CFBDE32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
