@@ -1,0 +1,19 @@
+﻿<Window x:Class="TextboxControls.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextboxControls"
+        mc:Ignorable="d"
+        Title="Textbox Galore" Height="500" Width="250">
+    <StackPanel Margin="10">
+        <TextBox/>
+        <TextBox Text="Hello World"></TextBox>
+        <TextBox AcceptsReturn="True" TextWrapping="Wrap" SpellCheck.IsEnabled="True" Language="en-US"/>
+        <DockPanel Margin="10">
+            <TextBox SelectionChanged="TextBox_SelectionChanged" DockPanel.Dock="Top" />
+            <TextBox Name="TxtStatus" AcceptsReturn="True" TextWrapping="Wrap" IsReadOnly="True" />
+
+        </DockPanel>
+    </StackPanel>
+</Window>
