@@ -5,8 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RadioButtonControl"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="Radio Button Sample" Height="454.444" Width="532.415">
+    <StackPanel Margin="10">
+        <Label FontWeight="Bold">Are you ready?</Label>
+        <RadioButton>Yes</RadioButton>
+        <RadioButton>No</RadioButton>
+        <RadioButton IsChecked="True">Maybe</RadioButton>
+        <Label FontWeight="Bold">Are you ready?</Label>
+        <RadioButton GroupName="ready">Yes</RadioButton>
+        <RadioButton GroupName="ready">No</RadioButton>
+        <RadioButton GroupName="ready" IsChecked="True">Maybe</RadioButton>
+
+        <Label FontWeight="Bold">Male or female?</Label>
+        <RadioButton GroupName="sex">Male</RadioButton>
+        <RadioButton GroupName="sex">Female</RadioButton>
+        <RadioButton GroupName="sex" IsChecked="True">Not sure</RadioButton>
+        <Label FontWeight="Bold">Are you ready?</Label>
+        <RadioButton>
+            <WrapPanel>
+                <Image Source="Images/acccept.png"  Width="16" Height="16" Margin="0,0,5,0" />
+                <TextBlock Text="Yes" Foreground="Green" />
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton Margin="0,5">
+            <WrapPanel>
+                <Image Source="Images/canvel.png"  Width="16" Height="16" Margin="0,0,5,0" />
+                <TextBlock Text="No" Foreground="Red" />
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton IsChecked="True">
+            <WrapPanel>
+                <Image Source="Images/question.png"  Width="16" Height="16" Margin="0,0,5,0" />
+                <TextBlock Text="Maybe" Foreground="Gray" />
+            </WrapPanel>
+        </RadioButton>
+    </StackPanel>
 </Window>
