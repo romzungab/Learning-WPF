@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckBoxControls", "CheckBo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioButtonControl", "RadioButtonControl\RadioButtonControl.csproj", "{4B2C15CD-96A4-46E4-9D9C-FD0CBB5A8EDC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolTips", "ToolTips\ToolTips.csproj", "{F605B5CD-5FAE-451F-A7F3-EAF1ABD4C39F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{4B2C15CD-96A4-46E4-9D9C-FD0CBB5A8EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B2C15CD-96A4-46E4-9D9C-FD0CBB5A8EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B2C15CD-96A4-46E4-9D9C-FD0CBB5A8EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F605B5CD-5FAE-451F-A7F3-EAF1ABD4C39F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F605B5CD-5FAE-451F-A7F3-EAF1ABD4C39F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F605B5CD-5FAE-451F-A7F3-EAF1ABD4C39F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F605B5CD-5FAE-451F-A7F3-EAF1ABD4C39F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
