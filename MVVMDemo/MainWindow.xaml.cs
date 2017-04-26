@@ -27,9 +27,9 @@ namespace MVVMDemo
 
         private void StudentViewControl_Loaded(object sender, RoutedEventArgs e)
         {
-            var studentViewModelObject = new ViewModel.StudentViewModel();
-            studentViewModelObject.LoadStudents();
-            StudentViewControl.DataContext = studentViewModelObject;
+            //var studentViewModelObject = new ViewModel.StudentViewModel();
+            //studentViewModelObject.LoadStudents();
+            //StudentViewControl.DataContext = studentViewModelObject;
         }
     }
 }

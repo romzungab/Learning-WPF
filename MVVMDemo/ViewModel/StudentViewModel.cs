@@ -11,8 +11,11 @@ namespace MVVMDemo.ViewModel
     public class StudentViewModel
     {
         public ObservableCollection<Student> Students { get; set; }
-
-        public void LoadStudents()
+        public StudentViewModel()
+        {
+         LoadStudents();   
+        }
+        private void LoadStudents()
         {
             var students = new ObservableCollection<Student>();
             students.Add(new Student { FirstName = "Mark", LastName = "Allain" });
