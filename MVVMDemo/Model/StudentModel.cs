@@ -22,12 +22,10 @@ namespace MVVMDemo.Model
             get { return _firstName; }
             set
             {
-                if (_firstName != value)
-                {
-                    _firstName = value;
-                    RaisePropertyChanged(nameof(FirstName));
-                    RaisePropertyChanged(nameof(FullName));
-                }
+                if (_firstName == value) return;
+                _firstName = value;
+                RaisePropertyChanged(nameof(FirstName));
+                RaisePropertyChanged(nameof(FullName));
             }
         }
         public string LastName
@@ -35,12 +33,10 @@ namespace MVVMDemo.Model
             get { return _lastName; }
             set
             {
-                if (_lastName != value)
-                {
-                    _lastName = value;
-                    RaisePropertyChanged(nameof(LastName));
-                    RaisePropertyChanged(nameof(FullName));
-                }
+                if (_lastName == value) return;
+                _lastName = value;
+                RaisePropertyChanged(nameof(LastName));
+                RaisePropertyChanged(nameof(FullName));
             }
         }
         public string FullName => _firstName +" "+_lastName;

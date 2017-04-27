@@ -5,25 +5,20 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MVVMDemo.View"
              xmlns:viewModel="clr-namespace:MVVMDemo.ViewModel"
-             mc:Ignorable="d" 
+             xmlns:vml="clr-namespace:MVVMDemo.ViewModelLocator"
+             xmlns:data="clr-namespace:MVVMDemo.Model"
+             vml:ViewModelLocator.AutoHookedUpViewModel="True"             mc:Ignorable="d"            
              d:DesignHeight="300" d:DesignWidth="300">
-    <UserControl.DataContext>
+    <!--<UserControl.DataContext>
         <viewModel:StudentViewModel/>
-    </UserControl.DataContext>
-        
-        <Grid>
-        <StackPanel HorizontalAlignment="Left">
-            <ItemsControl ItemsSource="{Binding Path=Students}">
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
+    </UserControl.DataContext>-->
+        <UserControl.Resources>
+        <DataTemplate DataType="{x:Type data:Student}">
+            <StackPanel Orientation="Horizontal">
                             <TextBox Text="{Binding Path=FirstName,Mode=TwoWay}" Width="100" Margin="3 5 3 5"/>
                             <TextBox Text="{Binding Path=LastName,Mode=TwoWay}" Width="100" Margin="0 5 3 5"/>
                             <TextBlock Text="{Binding Path=FullName,Mode=OneWay}" Margin="0 5 3 5"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
-        </StackPanel>
-    </Grid>
+                    </StackPanel>            </DataTemplate>    </UserControl.Resources>
+    <Grid>
+        <ListBox ItemsSource="{Binding Students}"/>    </Grid>
 </UserControl>
