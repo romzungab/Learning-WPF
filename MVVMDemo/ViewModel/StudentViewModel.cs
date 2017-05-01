@@ -11,10 +11,33 @@ namespace MVVMDemo.ViewModel
     public class StudentViewModel
     {
         public ObservableCollection<Student> Students { get; set; }
+        public MyICommand DeleteCommand { get; set; }
         public StudentViewModel()
         {
-         LoadStudents();   
+         LoadStudents();  
+         DeleteCommand = new MyICommand(OnDelete, CanDelete);    
         }
+
+        private bool CanDelete()
+        {
+            return SelectedStudent != null;
+        }
+
+        private Student _selectedStudent { get; set; }
+
+        public Student SelectedStudent {
+            get { return _selectedStudent; }
+            set
+            {
+                _selectedStudent = value;
+                DeleteCommand.RaiseCanExecuteChanged();
+            }
+        }
+        private void OnDelete()
+        {
+            Students.Remove(SelectedStudent);
+        }
+
         private void LoadStudents()
         {
             var students = new ObservableCollection<Student> {
@@ -23,5 +46,7 @@ namespace MVVMDemo.ViewModel
                         new Student { FirstName = "Linda", LastName = "Hamerski" } };
             Students = students;
         }
+
+
     }
 }

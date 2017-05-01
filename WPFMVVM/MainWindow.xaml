@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MVVM" Height="350" Width="525">
     <Window.Resources>
-        <viewModel:CustomerViewModel x:Key="CustViewObj" TxtCustomerName="Roms" TxtAmount="2000" IsMarried="True"/>
+        <viewModel:CustomerViewModel x:Key="CustViewObj" TxtCustomerName="Roms" TxtAmount="5000" IsMarried="True"/>
     </Window.Resources>
     <Grid>
         <Label x:Name="Lbl1" Content="Customer Name" HorizontalAlignment="Left" Margin="102,73,0,0" VerticalAlignment="Top"/>
@@ -16,11 +16,11 @@
         <TextBox x:Name="TxtAmount" HorizontalAlignment="Left" Height="23" Margin="225,107,0,0" TextWrapping="Wrap" Text="{Binding TxtAmount, Source={StaticResource CustViewObj}}" VerticalAlignment="Top" Width="120"/>
 
         <Label x:Name="Lbl3" Content="Buying Habits" HorizontalAlignment="Left" Margin="102,135,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="LblBuyingHabits" Content="                                 " HorizontalAlignment="Left" Margin="225,138,0,0" VerticalAlignment="Top" Background="{Binding LblAmountColor, Mode=OneWay, Source={StaticResource CustViewObj}}"/>
+        <Label x:Name="LblBuyingHabits" Content="                                 " HorizontalAlignment="Left" Margin="225,138,0,0" VerticalAlignment="Top" Background="{Binding Path=LblAmountColor, Mode=OneWay, Source={StaticResource CustViewObj}}"/>
         <Label x:Name="LblMarried" Content="Married" HorizontalAlignment="Left" Margin="102,166,0,0" VerticalAlignment="Top"/>
         <CheckBox Name="CbMarried" Margin="225,177,271,0" VerticalAlignment="Top" IsChecked="{Binding IsMarried, Source={StaticResource CustViewObj}}" IsHitTestVisible="False" IsEnabled="False" IsTabStop="False"/>
         <Label x:Name="Lbl4" Content="Tax" HorizontalAlignment="Left" Margin="102,197,0,0" VerticalAlignment="Top"/>
         <Label x:Name="LblTax" HorizontalAlignment="Left" Height="24" Margin="225,197,0,0" VerticalAlignment="Top" Width="128" Content="{Binding LblTax, Source={StaticResource CustViewObj}}"/>
-        <Button x:Name="ButtonTax" Content="Calculate Tax" HorizontalAlignment="Left" Margin="225,235,0,0" VerticalAlignment="Top" Width="75" Command="{Binding ButtonClick, Mode=OneWay, Source={StaticResource CustViewObj}}"/>
+        <Button x:Name="ButtonTax" Content="Calculate Tax" HorizontalAlignment="Left" Margin="225,235,0,0" VerticalAlignment="Top" Width="75" Command="{Binding Path=ButtonClick, Mode=OneWay, Source={StaticResource CustViewObj}}"/>
     </Grid>
 </Window>

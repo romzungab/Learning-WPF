@@ -36,9 +36,9 @@ namespace ViewModel
             set
             {
                 _obj.Amount = Convert.ToDouble(value);
-                OnPropertyChanged(TxtAmount);
+                OnPropertyChanged(LblAmountColor);
                 Calculate();
-            }
+               }
         }
 
         public string LblTax
@@ -55,11 +55,7 @@ namespace ViewModel
                 {
                     return "Blue";
                 }
-                else if (_obj.Amount > 1500)
-                {
-                    return "Red";
-                }
-                return "Yellow";
+                return _obj.Amount > 1500 ? "Red" : "Yellow";
             }
         }
 
@@ -78,8 +74,7 @@ namespace ViewModel
 
         public void OnPropertyChanged(string property)
         {
-            if(PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(property));
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
