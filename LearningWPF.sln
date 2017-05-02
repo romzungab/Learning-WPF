@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FsCalendar", "..\..\..\..\D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMDemoTest", "MVVMDemoTest\MVVMDemoTest.csproj", "{44F40C11-F720-4E82-B67B-06701BDA552E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaliburnEx", "CaliburnEx\CaliburnEx.csproj", "{8F9AE9EC-75B3-4136-BC90-39EAC246286E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{44F40C11-F720-4E82-B67B-06701BDA552E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44F40C11-F720-4E82-B67B-06701BDA552E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44F40C11-F720-4E82-B67B-06701BDA552E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F9AE9EC-75B3-4136-BC90-39EAC246286E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F9AE9EC-75B3-4136-BC90-39EAC246286E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F9AE9EC-75B3-4136-BC90-39EAC246286E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F9AE9EC-75B3-4136-BC90-39EAC246286E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
