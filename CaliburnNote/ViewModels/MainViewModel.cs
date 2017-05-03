@@ -13,7 +13,7 @@ namespace CaliburnNote.ViewModels
     {
         private const string WindowTitleDefault = "So. Just Note It";
         private string _windowTitle = WindowTitleDefault;
-        private JournalViewModel _JournalView;
+        private JournalViewModel _journalView;
 
         public MainViewModel()
         {
@@ -22,10 +22,10 @@ namespace CaliburnNote.ViewModels
 
         public JournalViewModel JournalView
         {
-            get { return _JournalView; }
+            get { return _journalView; }
             set
             {
-                _JournalView = value;
+                _journalView = value;
                NotifyOfPropertyChange(()=>JournalView);  
             } 
         }
