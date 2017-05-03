@@ -50,6 +50,7 @@ namespace MVVMDemo.ViewModel
         public int GetStudentCount()
         {
             return Students.Count;
-        }
+        }
+
     }
 }

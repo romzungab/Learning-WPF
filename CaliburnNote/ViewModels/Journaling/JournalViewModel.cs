@@ -13,13 +13,13 @@ namespace CaliburnNote.ViewModels.Journaling
         private string _Note=string.Empty;
         private string _NoteDisplay=string.Empty;
 
-        public bool CanDislayNote
+        public bool CanDisplayNote
         {
             get { return _CanDisplayNote; }
             set
             {
                 _CanDisplayNote = value;
-                NotifyOfPropertyChange(()=>CanDislayNote);
+                NotifyOfPropertyChange(()=>CanDisplayNote);
             }
         }
 
