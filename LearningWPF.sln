@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaliburnEvent", "CaliburnEv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaliburnWinManager", "CaliburnWinManager\CaliburnWinManager.csproj", "{4D67780A-2981-4388-BC65-A3E708F5C270}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaliburnScreenConductor", "CaliburnScreenConductor\CaliburnScreenConductor.csproj", "{ABF0A1DB-3CB1-43F3-B7E3-82E87142DA3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{4D67780A-2981-4388-BC65-A3E708F5C270}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D67780A-2981-4388-BC65-A3E708F5C270}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D67780A-2981-4388-BC65-A3E708F5C270}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABF0A1DB-3CB1-43F3-B7E3-82E87142DA3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABF0A1DB-3CB1-43F3-B7E3-82E87142DA3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABF0A1DB-3CB1-43F3-B7E3-82E87142DA3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABF0A1DB-3CB1-43F3-B7E3-82E87142DA3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
